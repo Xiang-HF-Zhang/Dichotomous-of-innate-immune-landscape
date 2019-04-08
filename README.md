@@ -39,6 +39,11 @@ Please contact xiangz@bcm.edu if you have any questions.
 
 ## Timer output
 
+* gse78220-ann-wTIMER.txt
+* metabric-timer-output.txt
+* riaz et al-timer.txt
+* Timer-TCGA-output.txt
+
 ## Dataset information:
 | Dataset (RData) | Description |
 | --- | --- |
