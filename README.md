@@ -7,42 +7,43 @@ Please contact xiangz@bcm.edu if you have any questions.
 
 ## Figure 1
 
-* Please add your annotation here.
+* R code used to generate Figures 1e, 1f, S2d, 1g, 1h, ii, and 1j
 
 ## Figure 2a-d
 
-* Please add your annotation here.
+* R code used to generate Figures 2a-2d
 
 ## Figure 2e-h and Figure S2
 
-* Please add your annotation here.
+* R code used to generate Figure 2e-2h and S2.
 
 ## Figure 3
 
-* Please add your annotation here.
+* R code used to generate Figure S3f.
 
 ## Figure 4
 
-* Please add your annotation here.
+* R code used to generate Figure 4b, 4f, 4g, and 4h.
 
 ## Figure 5-6
 
-*Please add your annotation here.
+* R code used to generate Figure 5b, 6a and 6b.
 
 ## Figure 8
 
-*Please add your annotation here.
+* R code used to generate Figure 8g-8i.
 
 ## mir200 analysis in TCGA
 
-* Please add your annotation here.
+* R code used to generate Figure 4i
 
 ## Timer output
 
-* gse78220-ann-wTIMER.txt
-* metabric-timer-output.txt
-* riaz et al-timer.txt
-* Timer-TCGA-output.txt
+* gse78220-ann-wTIMER.txt: TIMER output combined with clinical annotations of GSE78220.
+* metabric-timer-output.txt: TIMER output of the METARBIC dataset (discovery and validation datasets combined).
+* riaz et al-timer.txt: TIMER output of Riaz et al., 2016 (PMID: 29033130)
+* Timer-TCGA-output.txt: TIMER output of TCGA breast cancer dataset.
+
 
 ## Dataset information:
 | Dataset (RData) | Description |
