@@ -50,5 +50,5 @@ Please contact xiangz@bcm.edu if you have any questions.
 | Cancer cells of 8 models.RData | --- |
 | Macrophage-neutrophil-RNAseq.RData| --- |
 | Nanostring-of-72-TNBC-with-IHC-info.RData | --- |
-| TCGA-RNA-seq| * Please download all the splitted files (.zip, .z01, .z02) before unzip  |
+| TCGA-RNA-seq| * Please download all the splitted files (.zip.001, .zip.002, .zip.003, .zip.004) before unzip  |
 | .Rhistory | R workplace file| 
