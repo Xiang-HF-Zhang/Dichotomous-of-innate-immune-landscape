@@ -48,8 +48,8 @@ Please contact xiangz@bcm.edu if you have any questions.
 ## Dataset information:
 | Dataset (RData) | Description |
 | --- | --- |
-| Cancer cells of 8 models.RData | --- |
-| Macrophage-neutrophil-RNAseq.RData| --- |
-| Nanostring-of-72-TNBC-with-IHC-info.RData | --- |
-| TCGA-RNA-seq| * Please download all the splitted files (.zip.001, .zip.002, .zip.003, .zip.004) before unzip  |
+| Cancer cells of 8 models.RData | Normalized RNA-seq data of the 8 cell lines used in the study. Used to generate Figure 3b. |
+| Macrophage-neutrophil-RNAseq.RData| Normalized RNA-seq data of the purified macrophages and neutrophils extracted from 4 models (3 biological replicates each. Used to generate Figure 5a, 5b, 6a and 6b. |
+| Nanostring-of-72-TNBC-with-IHC-info.RData | Nanostring data of 72 TNBC used to generate Figure 2b and 2d. |
+| TCGA-RNA-seq| * TCGA TNBC RNA-seq data used to generate Figure 2e and 2f. Please download all the splitted files (.zip.001, .zip.002, .zip.003, .zip.004) before unzip  |
 | .Rhistory | R workplace file| 
