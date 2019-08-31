@@ -12,11 +12,8 @@ cor.dist <- function (x)
 dist.manhattan <- function(x){dist(x, method="manhattan")}
 hclust.ward.d <- function(x){hclust(x, method="ward.D")}
 
-# Read variation-stablized RNA-seq data from a text file
-vitro <- read.table("8cc-in-vitro.txt", header=TRUE, sep="\t", row.names=1)
-vitro.ann <- data.frame(Cell=c(rep("2208L", 3), rep("4T1", 3), rep("67NR", 3), 
-                               rep("AT3", 3), rep("E0771", 3), rep("PyMTE", 3), 
-                               rep("PyMTM", 3), rep("T11",3)))
+# Loadd variation-stablized RNA-seq data
+load("Cancer cells of 8 models.RData")
 
 # Re-arrange sample order for presentation
 vitro.ann$fig.3.plot.ind <- c(1,2,3,7,8,9,10,11,12,19,20,21,22,23,24,13,14,15,16,17,18,4,5,6)
