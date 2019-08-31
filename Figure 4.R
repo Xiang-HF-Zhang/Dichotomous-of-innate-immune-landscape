@@ -55,12 +55,12 @@ tcga.tn <- tcga[,which(tcga.ann$er_status_by_ihc == "Negative"
                        & tcga.ann$her2_status_by_ihc == "Negative")]
 
 # Run GSVA on TCGA TN Breast Cancer data using Hallmark Gene Sets
-tcga.tn.hm <- gsva(as.matrix(tcga.tn), hm.sets, method="gsva", rnaseq=TRUE)
+tcga.tn.hm <- gsva(as.matrix(tcga.tn), hm.sets, method="gsva")
 
 # Focusing on mTOR and EMT pathways
-tcga.tn.ann$mtor <- tcga.tn.hm$es.obs["HALLMARK_MTORC1_SIGNALING",]
-tcga.tn.ann$mtor2 <- tcga.tn.hm$es.obs["HALLMARK_PI3K_AKT_MTOR_SIGNALING",]
-tcga.tn.ann$emt.hm <- tcga.tn.hm$es.obs["HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION",]
+tcga.tn.ann$mtor <- tcga.tn.hm["HALLMARK_MTORC1_SIGNALING",]
+tcga.tn.ann$mtor2 <- tcga.tn.hm["HALLMARK_PI3K_AKT_MTOR_SIGNALING",]
+tcga.tn.ann$emt.hm <- tcga.tn.hm["HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION",]
 tcga.tn <- as.matrix(tcga.tn)
 
 # Read signatures from Taube et al., 2010, which are also provided in Supplemenatary Table.
