@@ -7,7 +7,7 @@ library(geneplotter)
 
 cor.dist <- function (x) 
 {
-  as.dist(1 - cor(t(x), use="pairwise.complete.obs"), method="kendall")
+  as.dist(1 - cor(t(x), use="pairwise.complete.obs", method="kendall"))
 }
 dist.manhattan <- function(x){dist(x, method="manhattan")}
 hclust.ward.d <- function(x){hclust(x, method="ward.D")}
