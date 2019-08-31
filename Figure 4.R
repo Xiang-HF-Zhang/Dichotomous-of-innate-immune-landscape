@@ -29,7 +29,7 @@ emt.cl.m <- c("Pdgfrb", "Zeb1","Fap", "Cdh2", "Cdh11", "Col1a1",
 
 vitro.e <- vitro[which(is.element(rownames(vitro), emt.cl.e)),]
 vitro.m <- vitro[which(is.element(rownames(vitro), emt.cl.m)),]
-vitro.em <- rbind(vitro.e, vitro.m)
+vitro.em <- as.matrix(rbind(vitro.e, vitro.m))
 
 # Generate Figure 4b
 heatmap.2(vitro.em, col=c(rep("green", 30), greenred(100), rep("red",30)), dist=cor.dist,
