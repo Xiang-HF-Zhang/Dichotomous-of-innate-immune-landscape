@@ -66,8 +66,8 @@ tcga.tn <- as.matrix(tcga.tn)
 # Read signatures from Taube et al., 2010, which are also provided in Supplemenatary Table.
 taube.emt.up <- scan("emt-up.txt", what="")
 taube.emt.dw <- scan("emt-dw.txt", what="")
-tcga.tn.ann$emt.taube <- apply(tcga.tn[which(is.element(rownames(tcga.tn), emt.up)),], 2, sum) -
-                         apply(tcga.tn[which(is.element(rownames(tcga.tn), emt.dw)),], 2, sum)
+tcga.tn.ann$emt.taube <- apply(tcga.tn[which(is.element(rownames(tcga.tn), taube.emt.up)),], 2, sum) -
+                         apply(tcga.tn[which(is.element(rownames(tcga.tn), taube.emt.dw)),], 2, sum)
 # Examine specific cytokines
 tcga.tn.ann$IL8 <- tcga.tn["IL8",]
 tcga.tn.ann$CXCL1 <- tcga.tn["CXCL1",]
@@ -87,11 +87,11 @@ timer.tn <- as.matrix(timer[match(colnames(tcga.tn), timer$id2),2:7])
 # Z-transformation
 timer.tn.z <- apply(timer.tn, 2, function(x){(x-mean(x))/sd(x)})
 # Timer scores of neutrophils and macrophages
-timer.tn.ann$Neu <- timer.tn.z[,"Neutrophil"]
-timer.tn.ann$Mac <- timer.tn.z[,"Macrophage"]
+tcga.tn.ann$Neu <- timer.tn.z[,"Neutrophil"]
+tcga.tn.ann$Mac <- timer.tn.z[,"Macrophage"]
 
 # Generate Figure 4g
-fig.4f <- heatmap.2(t(as.matrix(tcga.tn.ann[,c(29:38)])), 
+fig.4f <- heatmap.2(t(as.matrix(tcga.tn.ann[,c(30:38)])), 
                     col=c(rep("blue",20), dChip.colors(100), rep("red",20)), trace="none",
                     scale=("row"), dist=cor.dist, hclust=hclust.ward.d)$colInd
 
