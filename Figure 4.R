@@ -9,8 +9,13 @@ cor.dist <- function (x)
 {
   as.dist(1 - cor(t(x), use="pairwise.complete.obs"), method="kendall")
 }
+cor.dist.spearman <- function (x) 
+{
+  as.dist(1 - cor(t(x), use="pairwise.complete.obs"), method="spearman")
+}
 dist.manhattan <- function(x){dist(x, method="manhattan")}
 hclust.ward.d <- function(x){hclust(x, method="ward.D")}
+hclust.ward.d2 <- function(x){hclust(x, method="ward.D2")}
 
 # Read variation-stablized RNA-seq data from a text file
 vitro <- read.table("8cc-in-vitro.txt", header=TRUE, sep="\t", row.names=1)
